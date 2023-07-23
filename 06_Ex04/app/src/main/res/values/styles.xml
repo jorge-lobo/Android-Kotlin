@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Checkbox -->
+    <style name="MyCheckbox" parent="Theme.06_Ex04">
+        <item name="colorOnSurface">@color/accent</item>
+    </style>
+
+</resources>
