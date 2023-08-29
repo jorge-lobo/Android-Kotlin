@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey4"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:textColor="@color/background"
+    tools:context=".ui.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView_logo_head"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="@string/logo"
+            app:srcCompat="@drawable/logo_cc2" />
+
+
+        <TextView
+            android:id="@+id/text_lang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:layout_toStartOf="@id/btn_lang"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="end"
+            android:textAllCaps="true"
+            android:textColor="@color/grey2"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_lang"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@id/imageView_logo_head"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/grey2"
+            android:drawableTop="@drawable/language_32"
+            android:gravity="center"
+            app:cornerRadius="10dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_lang"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:visibility="invisible"
+            app:cardBackgroundColor="@color/background"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+            <RadioGroup
+                android:id="@+id/radio_group_lang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp">
+
+                <RadioButton
+                    android:id="@+id/radio_btn_pt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="@string/pt_"
+                    android:textAllCaps="true"
+                    android:textColor="@color/grey4"
+                    android:textSize="20sp"
+                    app:buttonTint="@color/grey4" />
+
+                <RadioButton
+                    android:id="@+id/radio_btn_en"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="@string/en_"
+                    android:textAllCaps="true"
+                    android:textColor="@color/grey4"
+                    android:textSize="20sp"
+                    app:buttonTint="@color/grey4" />
+
+            </RadioGroup>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_top"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@color/grey3" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textAllCaps="true"
+            android:textColor="@color/grey2"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/username"
+            android:textColor="@color/grey1"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edit_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/rounded_edit_text"
+            android:drawableStart="@drawable/user_32"
+            android:fontFamily="sans-serif"
+            android:hint="@string/username"
+            android:inputType="text"
+            android:text="@string/admin"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_view_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/password"
+            android:textColor="@color/grey1"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edit_pass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/rounded_edit_text"
+            android:drawableStart="@drawable/lock_32"
+            android:fontFamily="sans-serif"
+            android:hint="@string/___________"
+            android:inputType="textPassword"
+            android:text="@string/pass"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/accent"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textAllCaps="true"
+            android:textColor="@color/grey4"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/lembrar_login"
+            android:textColor="@color/grey1"
+            android:textSize="15sp"
+            android:theme="@style/MyCheckbox"
+            app:buttonTint="@color/grey1" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="160dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:backgroundTint="@color/grey2"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="@string/limpar"
+            android:textAllCaps="true"
+            android:textColor="@color/grey4"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/btn_signup"
+            android:layout_width="160dp"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/grey2"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="@string/registar"
+            android:textAllCaps="true"
+            android:textColor="@color/grey4"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/grey3" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_about"
+            android:layout_width="160dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/accent"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="@string/sobre"
+            android:textAllCaps="true"
+            android:textColor="@color/grey4"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton_facebook"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toStartOf="@id/imageButton_instagram"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="@color/grey2"
+            android:contentDescription="@string/facebook"
+            android:gravity="center"
+            app:srcCompat="@drawable/facebook_32" />
+
+        <ImageButton
+            android:id="@+id/imageButton_instagram"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toStartOf="@id/imageButton_youtube"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="@color/grey2"
+            android:contentDescription="@string/instagram"
+            android:gravity="center"
+            app:srcCompat="@drawable/instagram_32" />
+
+        <ImageButton
+            android:id="@+id/imageButton_youtube"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="@color/grey2"
+            android:contentDescription="@string/youtube"
+            android:gravity="center"
+            app:srcCompat="@drawable/youtube_32" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey4"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:textColor="@color/background"
+    tools:context=".ui.AboutActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView_logo_head"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="@string/logo"
+            app:srcCompat="@drawable/logo_cc2" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_top"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@color/grey3" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="@string/sobre"
+            android:textAllCaps="true"
+            android:textColor="@color/grey2"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/background"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:justificationMode="inter_word"
+                    android:text="@string/desenvolvimento_de_uma_aplicacao_android_que_fornece_informacoes_sobre_a_programacao_de_filmes_a_serem_projectados_pelo_cinecult_um_cineclube_do_baixo_minho_que_so_exibe_filmes_de_culto"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:justificationMode="inter_word"
+                    android:text="@string/para_atender_aos_requisitos_do_projecto_a_aplicacao_possui_uma_interface_intuitiva_e_funcionalidades_especificas_para_diferentes_tipos_de_usuarios_onde_se_destaca_o_usuario_admin_com_exclusividade_nas_funcoes_crud_relacionadas_aos_filmes_isso_garante_um_controlo_eficiente_sobre_a_programacao_exibida"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:justificationMode="inter_word"
+                    android:text="@string/a_aplicacao_inicia_com_uma_splashscreen_exibindo_o_logotipo_do_cinecult_isso_proporciona_uma_experiencia_visual_agradavel_aos_usuarios_enquanto_a_aplicacao_e_carregada"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:justificationMode="inter_word"
+                    android:text="@string/a_interface_principal_da_aplicacao_exibe_a_lista_de_filmes_programados_para_exibicao_no_cineclube_cada_filme_apresentado_com_detalhes_como_titulo_poster_data_de_exibicao_e_localizacao"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:justificationMode="inter_word"
+                    android:text="@string/para_alem_dos_botoes_de_ordenacao_por_titulo_e_por_data_tambem_foi_adicionado_um_botao_de_ordenacao_por_localidade_permitindo_aos_usuarios_ordenarem_os_filmes_por_local_de_exibicao"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="20dp"
+                    android:background="@color/grey1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center_horizontal"
+                    android:text="@string/aplicacao_desenvolvida_por_"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center_horizontal"
+                    android:text="@string/jorge_lobo"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/divider_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/grey3" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton_instagram"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="@color/grey2"
+            android:contentDescription="@string/www_instagram_com_jorgelobo15"
+            android:gravity="center"
+            app:srcCompat="@drawable/instagram_32" />
+
+        <ImageButton
+            android:id="@+id/imageButton_linkedin"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/imageButton_instagram"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="@color/grey2"
+            android:contentDescription="@string/www_linkedin_com_in_jorgelobo15"
+            android:gravity="center"
+            app:srcCompat="@drawable/linkedin_32" />
+
+        <ImageButton
+            android:id="@+id/imageButton_github"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/imageButton_linkedin"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="@color/grey2"
+            android:contentDescription="@string/github_com_jorge_lobo"
+            android:gravity="center"
+            app:srcCompat="@drawable/github_32" />
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="160dp"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/accent"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="@string/sair"
+            android:textAllCaps="true"
+            android:textColor="@color/grey4"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
